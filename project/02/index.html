@@ -8,73 +8,62 @@
     <meta name="google-signin-client_id"
         content="1069380228253-hua6ngi9thijgea7gvjoqkmhag311h9i.apps.googleusercontent.com">
     <link rel="icon" type="image/x-icon" href="res/favicon.png">
-    <title>Bukan Instagram</title>
+    <title>Feed | Bukan Instagram</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/dashboard.css">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header">
-            <div class="top">
-                <div class="logo">
-                    <img src="res/bukaninstagram.png" alt="Bukan Instagram">
-                </div>
-                <div class="or">
-                    <div class="line"></div>
-                    <p>MASUK</p>
-                    <div class="line"></div>
-                </div>
-                <div class="dif">
-                    <div class="gs">
-                        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <header>
+            <div class="container">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="res/profile.jpg" alt="Miko Iino">
                     </div>
-                    <div class="or logged onlylogged">
-                        <div class="line"></div>
-                        <p><a href="#" onclick="gotoDashboard();">Dashboard</a></p>
-                        <div class="line"></div>
+                    <div class="profile-user-settings">
+                        <h1 id="email-id" class="profile-user-name">Miko Iino</h1>
+                        <button class="btn profile-settings-btn" aria-label="Profile Settings">
+                            <i class="fas fa-cog fa-fw" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn profile-sign-out-btn">Sign Out</button>
                     </div>
-                    <div class="or logged onlylogged">
-                        <div class="line"></div>
-                        <p><a href="#" onclick="onSignOut();">Sign Out</a></p>
-                        <div class="line"></div>
+                    <div class="profile-stats">
+                        <ul>
+                            <li><span class="profile-stat-count">12</span> posts</li>
+                            <li><span class="profile-stat-count">5.000</span> followers</li>
+                            <li><span class="profile-stat-count">1</span> following</li>
+                        </ul>
+                    </div>
+                    <div class="profile-bio">
+                        <p>
+                            <span id="nama-lengkap" class="profile-real-name"></span>
+                            伊井野 ミコ
+                        </p>
+                        <p>
+                            <span class="profile-website"></span>
+                            <small><a href="" id="alamat-website" href="#">Website</a></small>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div>&nbsp;</div>
-            <div class="apps">
-                <p>Aplikasinya ga tersedia di sini :</p>
-                <div class="icons">
-                    <a href="#"><img src="res/appstore.png" alt="App Store"></a>
-                    <a href="#"><img src="res/googleplay.png" alt="Play Store"></a>
+        </header>
+        <main>
+            <div class="container">
+                <div class="gallery">
+
                 </div>
+                <div class="loader"></div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="links">
-                <ul>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                    <li><a href="#">PRESS</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">JOBS</a></li>
-                    <li><a href="#">PRIVACY</a></li>
-                    <li><a href="#">TERMS</a></li>
-                    <li><a href="#">DIRECTORY</a></li>
-                    <li><a href="#">PROFILES</a></li>
-                    <li><a href="#">HASHTAGS</a></li>
-                    <li><a href="#">LANGUAGE</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>Bukan Instagram &copy; 2020</p>
-            </div>
-        </div>
+        </main>
     </div>
 
-    <a href="https://tinyurl.com/ProgateID" target="_blank" class="ninjaken" title="Ikuti Ninja Ken ke komunitas Progate Indonesia yuk!"></a>
-    <script src="res/script.js"></script>
+    <a href="https://tinyurl.com/ProgateID" target="_blank" class="ninjaken"
+        title="Ikuti Ninja Ken ke komunitas Progate Indonesia yuk!"></a>
+    <script src="https://kit.fontawesome.com/95849a279d.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="res/dashboard.js"></script>
 </body>
 
 </html>
