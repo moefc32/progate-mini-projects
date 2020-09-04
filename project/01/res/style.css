@@ -1,3 +1,15 @@
+@keyframes ninjawiggle {
+
+    0%,
+    100% {
+        bottom: 50px;
+    }
+
+    50% {
+        bottom: 52px;
+    }
+}
+
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -16,11 +28,13 @@
     background-size: contain;
     transform: rotate(-20deg);
     transition: .25s;
+    animation: ninjawiggle .25s infinite;
 }
 
 .ninjaken:hover {
     left: -25px;
     transform: rotate(0);
+    animation: none;
 }
 
 body {
