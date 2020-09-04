@@ -10,6 +10,12 @@
     }
 }
 
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -45,4 +51,19 @@ body {
     line-height: 1.618em;
     background: #fafafa;
     color: #424242;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.loader {
+    width: 5em;
+    height: 5em;
+    margin: 0 auto;
+    border: 10px solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: loader .5s linear infinite;
 }
