@@ -1,10 +1,10 @@
 var startApp = function () {
-    gapi.load('auth2', function() {
+    gapi.load('auth2', function () {
         auth2 = gapi.auth2.init({
             client_id: '1069380228253-hua6ngi9thijgea7gvjoqkmhag311h9i.apps.googleusercontent.com',
             cookiepolicy: 'none',
             scope: 'openid profile email',
-        }).then(function(){
+        }).then(function () {
             retrieve();
         });
     });
@@ -19,7 +19,7 @@ var retrieve = function () {
 
 function signout() {
     var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function(){
+    auth2.signOut().then(function () {
         console.log('User signed out.');
         gotoFront();
     });

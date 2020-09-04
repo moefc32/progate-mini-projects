@@ -1,4 +1,5 @@
 @keyframes ninjawiggle {
+
     0%,
     100% {
         bottom: 50px;
@@ -183,4 +184,3 @@ body {
 .logged {
     display: none !important;
 }
-
