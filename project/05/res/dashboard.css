@@ -89,10 +89,6 @@ body {
     border: solid 2px #ddd;
 }
 
-.profile .profile-user-settings {
-    line-height: 3em;
-}
-
 .profile .profile-user-settings,
 .profile .profile-stats,
 .profile .profile-bio {
@@ -100,11 +96,19 @@ body {
     width: 65%;
 }
 
+.profile .profile-user-settings {
+    line-height: 3em;
+}
+
 .profile .profile-user-settings .profile-user-name {
     display: inline-block;
     margin: 0 50px 0 0;
     font-size: 2em;
     font-weight: bold;
+}
+
+.profile .profile-user-settings span {
+    vertical-align: top;
 }
 
 .profile .profile-user-settings .btn {
