@@ -67,6 +67,11 @@ main {
   max-width: 600px;
 }
 
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
