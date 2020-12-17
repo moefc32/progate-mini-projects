@@ -281,7 +281,7 @@ button {
   }
 }
 
-@media (min-width: 320px) and (min-height: 560px) {
+@media (min-width: 300px) and (min-height: 500px) {
   .block {
     display: none;
   }
