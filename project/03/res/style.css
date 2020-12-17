@@ -10,6 +10,22 @@
   }
 }
 
+@keyframes kenWiggle {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(2px);
+  }
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -35,22 +51,6 @@
   left: -25px;
   transform: rotate(0);
   animation: none;
-}
-
-@keyframes kenWiggle {
-
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-2px);
-  }
-
-  75% {
-    transform: translateX(2px);
-  }
 }
 
 body {
